@@ -1,0 +1,27 @@
+CREATE TABLE airpods (id INTEGER PRIMARY KEY, name TEXT, QUANTITY INTEGER, FC INTEGER, VC INTEGER, UNITCOST INTEGER);
+INSERT INTO airpods VALUES (1, "DAHRIEL", 15, 20, 15, 50);
+INSERT INTO airpods Values (2, "Kalei", 10,20,15,50);
+INSERT INTO airpods values (3, "Chloe", 5,20,15,50);
+INSERT INTO airpods values (4, "Christian", 8,20,15,50);
+INSERT INTO airpods values (5, "Melissa", 27,20,15,50);
+INSERT INTO airpods values (6, "Eddie", 35,20,15,50);
+INSERT INTO airpods values (7, "Eliza", 21,20,15,50);
+INSERT INTO airpods values (8, "Beto", 75, 20,15,50);
+INSERT INTO airpods values (9, "Rick", 3,20,15,50);
+INSERT INTO airpods values (10, "Magic", 2,20,15,50);
+INSERT INTO airpods values (11, "Tony", 100,20,15,50);
+INSERT INTO airpods values (12, "Sara", 66,20,15,50);
+INSERT INTO airpods values (13, "Homer", 61,20,15,50);
+INSERT INTO airpods values (14, "Liam", 51,20,15,50);
+INSERT INTO airpods values (15, "Cubby", 29,20,15,50);
+
+select * from airpods;
+
+SELECT SUM(QUANTITY) FROM AIRPODS;
+SELECT SUM(UNITCOST) FROM AIRPODS;
+SELECT SUM(FC) FROM AIRPODS;
+SELECT SUM(VC) FROM AIRPODS;
+SELECT NAME, SUM(QUANTITY) FROM AIRPODS GROUP BY NAME;
+SELECT NAME, SUM(QUANTITY) FROM AIRPODS GROUP BY NAME;
+SELECT NAME,(QUANTITY) FROM AIRPODS ORDER BY QUANTITY DESC;
+
